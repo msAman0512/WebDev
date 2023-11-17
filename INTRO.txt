@@ -1,0 +1,75 @@
+** INTRO TO HTML
+
+* Every HTML document corresponds to a single page.HTML is not a case sensitive language.
+* The 'tag' - contains a '<' ,'>' and a tag name.
+* <B> - this tag makes text bold.
+* Start and end tags differ by a '/'- e.g. <B> is start tag and </B> or <B\>is the end tag.
+* Text to be formatted are enclosed between the start and end tags.
+* The tag that also has an end tag and can contain some parameter between the start and end tags - Container element
+* The tag that do not have an end tag - Empty element. e.g. <BR> and <HR> tags.
+* Format of basic HTML document is:
+* <HMTL>                  IT'S COMPULSORY.It's the root tag.
+* <HEAD>...</HEAD>        IT'S NOT COMPULSORY
+* <BODY>...</BODY>        IT'S COMPULSORY
+* </HTML>
+* HTML is used to structure content in a webpage.Contents include images,texts.forms,etc.We structure such entities using HTML tags.
+* In this document(con)-with both tags and (emp)-only one tags
+* <HTML> element is used to identify that the document is an HTML document.
+* <HEAD> element contains info about the document that is not displayed.
+* <TITLE> sub element(con) contains the text as parameter that is to be specified as the title of the document "(Compulsory)".It resides in the <HEAD> tag.
+* Whatever content to be displayed in the browser window is written within the <BODY> tag.These contents are rendered into the browser screen/webpage.
+* Parameters of a tag are written inside it's start and end tags.
+* Attributes are the properties that are associated with a tag and are written with the tag name in the angular brackets of the start tags.
+* Empty tags do not have parameters but they may have attributes. 
+* More specifically HEAD, TITLE and BODY tags are attributes of the HTML tag and TITLE tag is the parameter of the HEAD tag.
+* Attributes of the BODY tag:
+*      TEXT- It sets the color of the normal text in document. Default color - black syntax- <BODY TEXT = 'red'>
+*      BACKGROUND- helps to set a background image for our html document  syntax - <BODY BACKGROUND = "URL OF THE IMAGE"> ACCEPTED extensions-jpg/gif
+*      LEFTMARGIN-helps in adjusting space between left border of the browser and text on the left side of the document. Value is given in pixels.<BODY LEFTMARGIN = "10">
+*       TOPMARGIN- adjusts top margin. Values given in pixels. Without quotes  <BODY TOPMARGIN = "10">
+*       BGCOLCOR-sets the bg color of the document, takes value either the color name or its hexadecimal code. <BODY BGCOCOR = 'RED'/'#FF0000'>
+* THE <BR> tag-used to insert line breaks in html document.(emp)inserts breaks of that many no. of lines as many times it's Written. Write it wherever you need it.
+* THE <P> tag- (con).it inserts a line break as well as some extra space in the beginning of the paragraph. The text that is to be displayed as a paragraph is enclosed between its start and end tag. Leaves a blank line at the start of every paragraph syntax- <P> paragraph </P>
+* It's attributes:
+* Some alignment options "Left"/"Center"/"Right". Syntax: <P Align = "Left"/"Center"/"Right">.By default is left when alignment option is not given. It's used to make the text start from either left, right or center.
+* The <FONT> tag- used for formatting texts.(con)
+* Attributes-  FACE-Specifies the font face of the text enclosed. Default is Times New Roman syntax <FONT FACE = "Algerian">
+*           SIZE- defines the size of the enclosed text. Accepted range- 1 to 7.Default size = 3  syntax: <FONT SIZE = "5">
+*           COLOR- Defines the color of the enclosed text. Accepts color name, hexadecimal color code or RGB color code. syntax- <FONT COLOR = "green">
+BASEFONT TAG IS NOT SUPPORTED IN HTML 5, BUT WAS USED IN HTML 4. TO SET PROPERTIES OF THE TEXTS IN THE DOCUMENT WE USE CSS.
+* The <BASEFONT> tag - (emp).defines the font properties for the entire web page. The font properties defined by it will continue until a <FONT> tag is encountered later in the document. After that tag gets finished it again comes into effects.
+* Its attributes: FACE- set font face for the entire web page. syntax- <BASEFONT FACE = "ALGERIAN">
+*                 SIZE - sets the font size for the entire web page. range in 1-7. syntax <BASEFONT SIZE = 5>
+*                 COLOR - sets the default font color for entire document  syntax  <BASEFONT COLOR = "RED">
+* The <CENTER> tag- (con)-It centre aligns the content enclosed within it, also it centers other elements such as images and arbitrary contents. syntax <CENTER>...</CENTER>.ALIGNMENT DONE VERTICALLY 
+* The <HR> tag- draws a horizontal line across the document window.(emp).divides visually info and sections of a document. syntax <HR>
+* Attributes of <HR>- ALIGN- specifies the horizontal alignment of the line. It can accept either Left/Center/Right. Center being the default. Syntax <HR ALIGN = "Left/Center/Right"
+*                     NOSHADE- Produces a solid black line that has no shading. takes no values. syntax <HR NOSHADE>
+*                     SIZE- It indicates the thickness of the line in pixels. Default size is 2 pixels. Syntax - <HR SIZE = "Thickness">
+*                     WIDTH- it defines the horizontal width of the line, which is the length of the line. Default size is the width of the page. Takes no of pixels e.g."5" or a %age of the page e.g. "75%".syntax <HR WIDTH = "width">
+*                     COLOR - specifies the color of the line in the web page. Takes name of the color. Syntax- <HR COLOR = "Color of the line">
+* The comment tag i.e. <!> tag- used to give comments to your html document.(emp).syntax <! Comments...>.Parameter of the body.
+* The Heading i.e. <Hn> tag.- (con).It is used to make some content look different from the rest of text. Also represents section headings. There are 6 levels of headings. From <H1> to <H2>.<H1> gives max size heading while <H6> gives minimum size heading. Syntax <Hn>...</Hn>.It makes the text "bold". It automatically gives paragraph breaks.
+* The Bold tag i.e. <B> tag- Displays the enclosed text in bold.(con). syntax- <B>...</B>
+* The italics i.e. <I> tag- Displays the enclosed text in italic.(con). syntax- <I>...</I>
+* The underline i.e. <U> tag- Displays the enclosed text underlined including the gaps.(con). syntax- <U>...</U>
+* The subscript i.e. <SUB> tag- Displays the enclosed text as a subscript.(con). syntax- <SUB>...</SUB>
+* The superscript i.e. <SUP> tag- Displays the enclosed text as a superscript.(con). syntax- <SUP>...</SUP>
+* The attribute value can remain unquoted if it doesn't contain ASCII whitespace or any of " ' ` = < or >. Otherwise, it has to be quoted using either single or double quotes. The value, along with the "=" character, can be omitted altogether if the value is the empty string.
+* <!DOCTYPE HTML> - This tag is kinda identification/defines (of) the document to be a HTML document.Is present at the start of the HTML document.
+* By default the webpage is viewed in FILE protocol.To view it with HTTP protocol install Live server exrension in vs code.
+* HTTP is based on the Local development server.It has an IP address of the local host when viewed in the browser.
+* To view the updated webpage based on some code variations just refresh the browser wndow.
+* When you click on inspect in browser it will open the developer tools panel which can be used to reverse engineer the webpage.To inspect an entity in the webpage RC on it and click on inspect. 
+
+** HYPERLINKS AND images
+In Vscode - td*3, 'tit' press "ENTER", lorem30
+
+[CSS]
+* Cascading style sheets.
+* Works alongside HTML.Used to style webpages and make them look better.Used to change colors,position,effects,font sizes etc.
+
+
+
+
+
